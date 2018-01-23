@@ -1,0 +1,1399 @@
+@prefix :      <https://example.org/rdfcricket/id/> .
+@prefix cric:  <http://example.org/onto/cricketonto/> .
+@prefix xsd:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdf:   <http://www.w3.org/2000/01/rdf-schema#> .
+
+:game1 a cric:CricketGame;
+	   cric:hasLocation :place1;
+	   cric:hasDate :date1;
+	   cric:hasFormat :format1;
+	   cric:hasRunDifference "100"^^xsd:int;
+	   cric:hasPlayerOfMatch :t1player4;
+	   cric:providesAgentRole :tr1, :tr2;
+	   cric:hasWinner :team1;
+	   cric:hasLooser :team2;
+	   cric:hasInnings :inn1, :inn2.
+	   
+:place1 a cric:Place;
+		cric:hasName "Southampton"^^xsd:String.
+
+:date1 a cric:Date;
+	   cric:hasDateValue "2005-06-13"^^xsd:DateTimeStamp.
+	  
+:format1 a cric:Format.
+cric:T20_Format rdf:instanceOf :format1.
+
+:tr1 a cric:TeamRole;
+	cric:performedBy :team1.
+:tr2 a cric:TeamRole;
+	cric:performedBy :team2.
+		
+:team1 	a cric:Team;
+		cric:hasCountry :c1;
+		cric:providesAgentRole :t1pr1;
+		cric:providesAgentRole :t1pr2;
+		cric:providesAgentRole :t1pr3;
+		cric:providesAgentRole :t1pr4;
+		cric:providesAgentRole :t1pr5;
+		cric:providesAgentRole :t1pr6;
+		cric:providesAgentRole :t1pr7;
+		cric:providesAgentRole :t1pr8;
+		cric:providesAgentRole :t1pr9;
+		cric:providesAgentRole :t1pr10;
+		cric:providesAgentRole :t1pr11.
+
+:t1pr1 a cric:PlayerRole;
+	cric:performedBy :t1player1.
+:t1player1 a cric:Player;
+		cric:hasName "ME Trescothick"^^xsd:string.
+:t1p1bat a cric:BatsmanRole;
+		cric:performedBy :t1player1.
+::t1p1bowl a cric:BowlerRole;
+		cric:performedBy :t1player1.
+:t1p1ns a cric:NonStrikerRole;
+		cric:performedBy :t1player1.
+		
+:t1pr2 a cric:PlayerRole;
+	cric:performedBy :t1player2.
+:t1player2 a cric:Player;
+		cric:hasName "GO Jones"^^xsd:string.
+:t1p2bat a cric:BatsmanRole;
+		cric:performedBy :t1player2.
+:t1p1bowl a cric:BowlerRole;
+		cric:performedBy :t1player2.
+::t1p2ns a cric:NonStrikerRole;
+		cric:performedBy :t1player2.
+
+:t1pr3 a cric:PlayerRole;
+	cric:performedBy :t1player3.
+:t1player3 a cric:Player;
+		cric:hasName "A Flintoff"^^xsd:string.
+:t1p3bat a cric:BatsmanRole;
+		cric:performedBy :t1player3.
+:t1p3bowl a cric:BowlerRole;
+		cric:performedBy :t1player3.
+::t1p3ns a cric:NonStrikerRole;
+		cric:performedBy :t1player3.
+		
+:t1pr4 a cric:PlayerRole;
+	cric:performedBy :t1player4.
+:t1player4 a cric:Player;
+		cric:hasName "KP Pietersen"^^xsd:string.
+:t1p4bat a cric:BatsmanRole;
+		cric:performedBy :t1player4.
+:t1p4ns a cric:NonStrikerRole;
+		cric:performedBy :t1player4.
+:t1p4bowl a cric:BowlerRole;
+		cric:performedBy :t1player4.
+		
+:t1pr5 a cric:PlayerRole;
+	cric:performedBy :t1player5.
+:t1player5 a cric:Player;
+		cric:hasName "MP Vaughan"^^xsd:string.
+:t1p5bat a cric:BatsmanRole;
+		cric:performedBy :t1player5.
+:t1p5ns a cric:NonStrikerRole;
+		cric:performedBy :t1player5.
+:t1p5bowl a cric:BowlerRole;
+		cric:performedBy :t1player5.
+	
+:t1pr6 a cric:PlayerRole;
+	cric:performedBy :t1player6.
+:t1player6 a cric:Player;
+		cric:hasName "PD Collingwood"^^xsd:string.
+:t1p6bat a cric:BatsmanRole;
+		cric:performedBy :t1player6.
+:t1p6ns a cric:NonStrikerRole;
+		cric:performedBy :t1player6.
+:t1p6bowl a cric:BowlerRole;
+		cric:performedBy :t1player6.
+		
+:t1pr7 a cric:PlayerRole;
+	cric:performedBy :t1player7.
+:t1player7 a cric:Player;
+		cric:hasName "AJ Strauss"^^xsd:string.
+:t1p7bat a cric:BatsmanRole;
+		cric:performedBy :t1player7.
+:t1p7ns a cric:NonStrikerRole;
+		cric:performedBy :t1player7.
+:t1p7bowl a cric:BowlerRole;
+		cric:performedBy :t1player7.
+
+:t1pr8 a cric:PlayerRole;
+	cric:performedBy :t1player8.
+:t1player8 a cric:Player;
+		cric:hasName "VS Solanki"^^xsd:string.
+:t1p8bat a cric:BatsmanRole;
+		cric:performedBy :t1player8.
+:t1p8ns a cric:NonStrikerRole;
+		cric:performedBy :t1player8.
+:t1p8bowl a cric:BowlerRole;
+		cric:performedBy :t1player8.
+
+:t1pr9 a cric:PlayerRole;
+	cric:performedBy :t1player9.
+:t1player9 a cric:Player;
+		cric:hasName "J Lewis"^^xsd:string.
+:t1p9bat a cric:BatsmanRole;
+		cric:performedBy :t1player9.
+:t1p9ns a cric:NonStrikerRole;
+		cric:performedBy :t1player9.
+:t1p9bowl a cric:BowlerRole;
+		cric:performedBy :t1player9.
+
+:t1pr10 a cric:PlayerRole;
+	cric:performedBy :t1player10.
+:t1player10 a cric:Player;
+		cric:hasName "D Gough"^^xsd:string.
+:t1p10bat a cric:BatsmanRole;
+		cric:performedBy :t1player10.
+:t1p10ns a cric:NonStrikerRole;
+		cric:performedBy :t1player10.
+:t1p10bowl a cric:BowlerRole;
+		cric:performedBy :t1player10.
+
+:t1pr11 a cric:PlayerRole;
+	cric:performedBy :t1player11.
+:t1player11 a cric:Player;
+		cric:hasName "SJ Harmison"^^xsd:string.
+:t1p11bat a cric:BatsmanRole;
+		cric:performedBy :t1player11.
+:t1p11ns a cric:NonStrikerRole;
+		cric:performedBy :t1player11.
+:t1p11bowl a cric:BowlerRole;
+		cric:performedBy :t1player11.
+
+:c1 	a cric:Country;
+		cric:hasName "England"^^xsd:string.
+
+:team2 	a cric:Team;
+		cric:hasCountry :c2
+		cric:providesAgentRole :t2pr1;
+		cric:providesAgentRole :t2pr2;
+		cric:providesAgentRole :t2pr3;
+		cric:providesAgentRole :t2pr4;
+		cric:providesAgentRole :t2pr5;
+		cric:providesAgentRole :t2pr6;
+		cric:providesAgentRole :t2pr7;
+		cric:providesAgentRole :t2pr8;
+		cric:providesAgentRole :t2pr9;
+		cric:providesAgentRole :t2pr10;
+		cric:providesAgentRole :t2pr11.
+
+:c2 	a cric:Country;
+		cric:hasName "Australia"^^xsd:string.
+	
+:t2pr1 a cric:PlayerRole;
+	cric:performedBy :t2player1.
+:t2player1 a cric:Player;
+		cric:hasName "AC Gilcrist"^^xsd:string.
+:t2p1bat a cric:BatsmanRole;
+		cric:performedBy :t2player1.
+:t2p1ns a cric:NonStrikerRole;
+		cric:performedBy :t2player1.
+:t2p1bowl a cric:BowlerRole;
+		cric:performedBy :t2player1.
+		
+:t2pr2 a cric:PlayerRole;
+	cric:performedBy :t2player2.
+:t2player2 a cric:Player;
+		cric:hasName "ML Hayden"^^xsd:string.
+:t2p2bat a cric:BatsmanRole;
+		cric:performedBy :t2player2.
+:t2p2ns a cric:NonStrikerRole;
+		cric:performedBy :t2player2.
+:t2p2bowl a cric:BowlerRole;
+		cric:performedBy :t2player2.
+
+		
+:t2pr3 a cric:PlayerRole;
+	cric:performedBy :t2player3.
+:t2player3 a cric:Player;
+		cric:hasName "A Symonds"^^xsd:string.
+:t2p3bat a cric:BatsmanRole;
+		cric:performedBy :t2player3.
+:t2p3ns a cric:NonStrikerRole;
+		cric:performedBy :t2player3.
+:t2p3bowl a cric:BowlerRole;
+		cric:performedBy :t2player3.
+
+:t2pr4 a cric:PlayerRole;
+	cric:performedBy :t2player4.
+:t2player4 a cric:Player;
+		cric:hasName "MJ Clarke"^^xsd:string.
+:t2p4bat a cric:BatsmanRole;
+		cric:performedBy :t2player4.
+:t2p4ns a cric:NonStrikerRole;
+		cric:performedBy :t2player4.
+:t2p4bowl a cric:BowlerRole;
+		cric:performedBy :t2player4.
+
+:t2pr5 a cric:PlayerRole;
+	cric:performedBy :t2player5.
+:t2player5 a cric:Player;
+		cric:hasName "MEK Hussey"^^xsd:string.
+:t2p5bat a cric:BatsmanRole;
+		cric:performedBy :t2player5.
+:t2p5ns a cric:NonStrikerRole;
+		cric:performedBy :t2player5.
+:t2p5bowl a cric:BowlerRole;
+		cric:performedBy :t2player5.
+
+:t2pr6 a cric:PlayerRole;
+	cric:performedBy :t2player6.
+:t2player6 a cric:Player;
+		cric:hasName "RT Ponting"^^xsd:string.
+:t2p6bat a cric:BatsmanRole;
+		cric:performedBy :t2player6.
+:t2p6ns a cric:NonStrikerRole;
+		cric:performedBy :t2player6.
+:t2p6bowl a cric:BowlerRole;
+		cric:performedBy :t2player6.
+
+:t2pr7 a cric:PlayerRole;
+	cric:performedBy :t2player7.
+:t2player7 a cric:Player;
+		cric:hasName "DR Martyn"^^xsd:string.
+:t2p7bat a cric:BatsmanRole;
+		cric:performedBy :t2player7.
+:t2p7ns a cric:NonStrikerRole;
+		cric:performedBy :t2player7.
+:t2p7bowl a cric:BowlerRole;
+		cric:performedBy :t2player7.
+
+:t2pr8 a cric:PlayerRole;
+	cric:performedBy :t2player8.
+:t2player8 a cric:Player;
+		cric:hasName "JN Gillespie"^^xsd:string.
+:t2p8bat a cric:BatsmanRole;
+		cric:performedBy :t2player8.
+:t2p8ns a cric:NonStrikerRole;
+		cric:performedBy :t2player8.
+:t2p8bowl a cric:BowlerRole;
+		cric:performedBy :t2player8.
+
+:t2pr9 a cric:PlayerRole;
+	cric:performedBy :t2player9.
+:t2player9 a cric:Player;
+		cric:hasName "MS Kasprowicz"^^xsd:string.
+:t2p9bat a cric:BatsmanRole;
+		cric:performedBy :t2player9.
+:t2p9ns a cric:NonStrikerRole;
+		cric:performedBy :t2player9.
+:t2p9bowl a cric:BowlerRole;
+		cric:performedBy :t2player9.
+
+:t2pr10 a cric:PlayerRole;
+	cric:performedBy :t2player10.
+:t2player10 a cric:Player;
+		cric:hasName "McGrath"^^xsd:string.
+:t2p10bat a cric:BatsmanRole;
+		cric:performedBy :t2player10.
+:t2p10ns a cric:NonStrikerRole;
+		cric:performedBy :t2player10.
+:t2p10bowl a cric:BowlerRole;
+		cric:performedBy :t2player10.
+
+:t2pr11 a cric:PlayerRole;
+	cric:performedBy :t2player11.
+:t2player11 a cric:Player;
+		cric:hasName "B Lee"^^xsd:string.
+:t2p11bat a cric:BatsmanRole;
+		cric:performedBy :t2player11.
+:t2p11ns a cric:NonStrikerRole;
+		cric:performedBy :t2player11.
+:t2p11bowl a cric:BowlerRole;
+		cric:performedBy :t2player11.
+
+:run0 a cric:Runs;
+		hasRunValue 0 ^^ xsd:int.
+:run1 a cric:Runs;
+		hasRunValue 1 ^^ xsd:int.
+:run2 a cric:Runs;
+		hasRunValue 2 ^^ xsd:int.
+:run3 a cric:Runs;
+		hasRunValue 3 ^^ xsd:int.
+:run4 a cric:Runs;
+		hasRunValue 4 ^^ xsd:int.
+:run5 a cric:Runs;
+		hasRunValue 5 ^^ xsd:int.
+:run6 a cric:Runs;
+		hasRunValue 6 ^^ xsd:int.
+
+:extra0 a cric:Extras;
+		hasExtraValue 0 ^^ xsd:int.
+:extra1 a cric:Extras;
+		hasExtraValue 1 ^^ xsd:int.
+:extra2 a cric:Extras;
+		hasExtraValue 2 ^^ xsd:int.
+:extra3 a cric:Extras;
+		hasExtraValue 3 ^^ xsd:int.
+:extra4 a cric:Extras;
+		hasExtraValue 4 ^^ xsd:int.
+:extra5 a cric:Extras;
+		hasExtraValue 5 ^^ xsd:int.
+
+:inn1 a cric:Inning;
+	cric:NextInning :inn2;
+	cric:subEventOf :game1;
+	cric:hasOver :1over1, :1over2, :1over3,  :1over4,  :1over5, :1over6,  :1over7  , :1over8, :1over9,  :1over10,
+				 :1over11, :1over12,:1over13, :1over14, :1over15,:1over16, :1over17 , :1over18,:1over19, :1over20.
+
+:inn2 a cric:Inning;
+	cric:subEventOf :game1;
+	cric:hasOver :2over1, :2over2, :2over3,  :2over4,  :2over5, :2over6,  :2over7  , :2over8, :2over9,  :2over10,
+				 :2over11, :2over12,:2over13, :2over14, :2over15,:2over16, :2over17 , :2over18,:2over19, :2over20.
+
+:1over1 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :11ball1, :11ball2 ,:11ball3, :11ball4, :11ball5, :11ball6,:11ball7;
+		cric:nextOver :1over2.
+		
+:11ball1 a cric:ball;
+		cric:subEventOf :1over1;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p11bowl .
+		
+:11ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p11bowl .
+
+:11ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+
+:11ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+
+:11ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+
+:11ball6 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+
+:11ball7 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+
+
+:1over2 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :12ball1, :12ball2 ,:12ball3, :12ball4, :12ball5, :12ball6,:12ball7;
+		cric:nextOver :1over3.
+		
+:12ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p10bowl .
+:12ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p10bowl .
+:12ball3 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p10bowl .
+:12ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p10bowl .
+:12ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p10bowl .
+:12ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p10bowl .
+:12ball7 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p10bowl .
+
+:1over3 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :13ball1, :13ball2 ,:13ball3, :13ball4, :13ball5, :13ball6;
+		cric:nextOver :1over4.
+:13ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p11bowl .
+:13ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p2ns, :t2p11bowl .
+:13ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+:13ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+:13ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+:13ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p11bowl .
+
+:1over4 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :14ball1, :14ball2 ,:14ball3, :14ball4, :14ball5, :14ball6;
+		cric:nextOver :1over5.
+:14ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p10bowl .
+:14ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p10bowl .
+:14ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p10bowl .
+:14ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p10bowl .
+:14ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p2bat, :t1p1ns, :t2p10bowl .
+:14ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p3ns, :t2p10bowl .
+
+:1over5 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :15ball1, :15ball2 ,:15ball3, :15ball4, :15ball5, :15ball6 , :15ball7, :15ball8;
+		cric:nextOver :1over6.
+:15ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p3ns, :t2p11bowl .
+:15ball2 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p3bat, :t1p1ns, :t2p11bowl .
+:15ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p1bat, :t1p3ns, :t2p11bowl .
+:15ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p3ns, :t2p11bowl .
+:15ball5 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p3bat, :t1p1ns, :t2p11bowl .
+:15ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p3bat, :t1p1ns, :t2p11bowl .
+:15ball7 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p3ns, :t2p11bowl .
+:15ball8 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run3; 
+		cric:providesAgentRole :t1p3bat, :t1p1ns, :t2p11bowl .
+
+:1over6 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :16ball1, :16ball2 ,:16ball3, :16ball4, :16ball5, :16ball6;
+		cric:nextOver :1over7.
+:16ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p3bat, :t1p1ns, :t2p9bowl .
+:16ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p3ns, :t2p9bowl .
+:16ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p1bat, :t1p3ns, :t2p9bowl .
+:16ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p3ns, :t2p9bowl .
+:16ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p3bat, :t1p1ns, :t2p9bowl .
+:16ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p9bowl .
+
+:1over7 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :17ball1, :17ball2 ,:17ball3, :17ball4, :17ball5, :17ball6;
+		cric:nextOver :1over8.
+:17ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p8bowl .
+:17ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p8bowl .
+:17ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p8bowl .
+:17ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p8bowl .
+:17ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p8bowl .
+:17ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p8bowl .
+
+:1over8 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :18ball1, :18ball2 ,:18ball3, :18ball4, :18ball5, :18ball6;
+		cric:nextOver :1over8.
+:18ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p9bowl .
+:18ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p9bowl .
+:18ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p9bowl .
+:18ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p9bowl .
+:18ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p9bowl .
+:18ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p9bowl .
+
+:1over9 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :19ball1, :19ball2 ,:19ball3, :19ball4, :19ball5, :19ball6;
+		cric:nextOver :1over10.
+:19ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p8bowl .
+:19ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p8bowl .
+:19ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p8bowl .
+:19ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p8bowl .
+:19ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p8bowl .
+:19ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run6; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p8bowl .
+
+:1over10 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :110ball1, :110ball2 ,:110ball3, :110ball4, :110ball5, :110ball6;
+		cric:nextOver :10ver11.
+:110ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p9bowl .
+:110ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p9bowl .
+:110ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p9bowl .
+:110ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p9bowl .
+:110ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p9bowl .
+:110ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p4bat, :t1p2ns, :t2p9bowl .
+
+:1over11 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :111ball1, :111ball2 ,:111ball3, :111ball4, :111ball5, :111ball6;
+		cric:nextOver :1over12.
+:111ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p4bowl .
+:111ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p4bowl .
+:111ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p4bowl .
+:111ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p4ns, :t2p4bowl .
+:111ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0;
+		cric:providesAgentRole :t1p4bat, :t1p1ns, :t2p4bowl .
+:111ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p5ns, :t2p4bowl .
+
+:1over12 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :112ball1, :112ball2 ,:112ball3, :112ball4, :112ball5, :112ball6;
+		cric:nextOver :1over13.
+:112ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p5ns, :t2p3bowl .
+:112ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p5bat, :t1p1ns, :t2p3bowl .
+:112ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p6bat, :t1p1ns, :t2p3bowl .
+:112ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p1ns, :t2p3bowl .
+:112ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p6ns, :t2p3bowl .
+:112ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p1ns, :t2p3bowl .
+
+:1over13 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :113ball1, :113ball2 ,:113ball3, :113ball4, :113ball5, :113ball6;
+		cric:nextOver :1over14.
+:113ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p1ns, :t2p4bowl .
+:113ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p6ns, :t2p4bowl .
+:113ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p1bat, :t1p6ns, :t2p4bowl .
+:113ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p6bat, :t1p1ns, :t2p4bowl .
+:113ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p1ns, :t2p4bowl .
+:113ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p6ns, :t2p4bowl .
+
+:1over14 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :114ball1, :114ball2 ,:114ball3, :114ball4, :114ball5, :114ball6;
+		cric:nextOver :1over15.
+:114ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p1bat, :t1p6ns, :t2p3bowl .
+:114ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p3bowl .
+:114ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p3bowl .
+:114ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p3bowl .
+:114ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p3bowl .
+:114ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p3bowl .
+
+
+:1over15 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :115ball1, :115ball2 ,:115ball3, :115ball4, :115ball5, :115ball6;
+		cric:nextOver :1over16.
+:115ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run3; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p4bowl .
+:115ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p4bowl .
+:115ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p4bowl .
+:115ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p4bowl .
+:115ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p4bowl .
+:115ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run6; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p4bowl .
+
+
+:1over16 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :116ball1, :116ball2 ,:116ball3, :116ball4, :116ball5, :116ball6;
+		cric:nextOver :1over17.
+:116ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p3bowl .
+:116ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p3bowl .
+:116ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p3bowl .
+:116ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p3bowl .
+:116ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p3bowl .
+:116ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p3bowl .
+
+:1over17 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :117ball1, :117ball2 ,:117ball3, :117ball4, :117ball5, :117ball6, :117ball7;
+		cric:nextOver :1over18.
+:117ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p8bowl .
+:117ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p8bowl .
+:117ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p8bowl .
+:117ball4 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p8bowl .
+:117ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p8bowl .
+:117ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p8bowl .
+:117ball7 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run6; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p8bowl .
+
+:1over18 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :118ball1, :118ball2 ,:118ball3, :118ball4, :118ball5, :118ball6;
+		cric:nextOver :1over19.
+:118ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p10bowl .
+:118ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p10bowl .
+:118ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p10bowl .
+:118ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p10bowl .
+:118ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p10bowl .
+:118ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p10bowl .
+
+:1over19 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :119ball1, :119ball2 ,:119ball3, :119ball4, :119ball5, :119ball6;
+		cric:nextOver :1over20.
+:119ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p6bat, :t1p7ns, :t2p8bowl .
+:119ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p7bat, :t1p6ns, :t2p8bowl .
+:119ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t1p8bat, :t1p6ns, :t2p8bowl .
+:119ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p6bat, :t1p8ns, :t2p8bowl .
+:119ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p6bat, :t1p8ns, :t2p8bowl .
+:119ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p6bat, :t1p8ns, :t2p8bowl .
+
+:1over20 a cric:over;
+		cric:subEventOf :inn1;
+		cric:hasBall :120ball1, :120ball2 ,:120ball3, :120ball4, :120ball5, :120ball6.
+:120ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p8bat, :t1p6ns, :t2p10bowl .
+:120ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p8bat, :t1p6ns, :t2p10bowl .
+:120ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t1p8bat, :t1p6ns, :t2p10bowl .
+:120ball4 a cric:ball
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p8bat, :t1p6ns, :t2p10bowl .
+:120ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t1p6bat, :t1p9ns, :t2p10bowl .
+:120ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t1p6bat, :t1p9ns, :t2p10bowl .
+
+
+
+:2over1 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :21ball1, :21ball2 ,:21ball3, :21ball4, :21ball5, :21ball6;
+		cric:nextOver :2over2.
+		
+:21ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+		
+:21ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+
+:21ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+:21ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+
+:21ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+
+:21ball6 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+
+:2over2 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :22ball1, :22ball2 ,:22ball3, :22ball4, :22ball5, :22ball6;
+		cric:nextOver :2over3.
+		
+:22ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p2bat, :t2p1ns, :t1p9bowl .
+:22ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p2bat, :t2p1ns, :t1p9bowl .
+:22ball3 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p9bowl .
+:22ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0;
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p9bowl .
+:22ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p9bowl .
+:22ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p9bowl .
+
+:2over3 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :23ball1, :23ball2 ,:23ball3, :23ball4, :23ball5, :23ball6,:23ball7;
+		cric:nextOver :2over4.
+:23ball1 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+:23ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p2bat, :t2p1ns, :t1p10bowl .
+:23ball3 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+:23ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+:23ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p1bat, :t2p2ns, :t1p10bowl .
+:23ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p2bat, :t2p3ns, :t1p10bowl .
+:23ball7 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p3bat, :t2p4ns, :t1p10bowl .
+
+:2over4 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :24ball1, :24ball2 ,:24ball3, :24ball4, :24ball5, :24ball6;
+		cric:nextOver :2over5.
+:24ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p4bat, :t2p3ns, :t1p9bowl .
+:24ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p5bat, :t2p3ns, :t1p9bowl .
+:24ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1;
+		cric:providesAgentRole :t2p5bat, :t2p3ns, :t1p9bowl .
+:24ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p3bat, :t2p5ns, :t1p9bowl .
+:24ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p6bat, :t2p5ns, :t1p9bowl .
+:24ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p6bat, :t2p5ns, :t1p9bowl .
+
+:2over5 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :25ball1, :25ball2 ,:25ball3, :25ball4, :25ball5, :25ball6;
+		cric:nextOver :2over6.
+:25ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p5bat, :t2p6ns, :t1p10bowl .
+:25ball2 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p5bat, :t2p6ns, :t1p10bowl .
+:25ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p5bat, :t2p6ns, :t1p10bowl .
+:25ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p5bat, :t2p6ns, :t1p10bowl .
+:25ball5 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p7bat, :t2p6ns, :t1p10bowl .
+:25ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p7bat, :t2p6ns, :t1p10bowl .
+
+:2over6 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :26ball1, :26ball2 ,:26ball3, :26ball4, :26ball5, :26ball6;
+		cric:nextOver :2over7.
+:26ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p6bat, :t2p7ns, :t1p9bowl .
+:26ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p7ns, :t1p9bowl .
+:26ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run3; 
+		cric:providesAgentRole :t2p8bat, :t2p7ns, :t1p9bowl .
+:26ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p7bat, :t2p8ns, :t1p9bowl .
+:26ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p7bat, :t2p8ns, :t1p9bowl .
+:26ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p9bowl .
+
+:2over7 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :27ball1, :27ball2 ,:27ball3, :27ball4, :27ball5, :27ball6, :27ball7;
+		cric:nextOver :2over8.
+:27ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p11bowl .
+:27ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p11bowl .
+:27ball3 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p11bowl .
+:27ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p11bowl .
+:27ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p11bowl .
+:27ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p11bowl .
+:27ball7 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p11bowl .
+
+:2over8 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :28ball1, :28ball2 ,:28ball3, :28ball4, :28ball5, :28ball6;
+		cric:nextOver :2over8.
+:28ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run2; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p9bowl .
+:28ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p9bowl .
+:28ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p9bowl .
+:28ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p9bowl .
+:28ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p9bowl .
+:28ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run3; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p9bowl .
+
+:2over9 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :29ball1, :29ball2 ,:29ball3, :29ball4, :29ball5, :29ball6;
+		cric:nextOver :2over10.
+:29ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p11bowl .
+:29ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p11bowl .
+:29ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p11bowl .
+:29ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p11bowl .
+:29ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p11bowl .
+:29ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p11bowl .
+
+:2over10 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :210ball1, :210ball2 ,:210ball3, :210ball4, :210ball5, :210ball6;
+		cric:nextOver :20ver11.
+:210ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p3bowl .
+:210ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run4; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p3bowl .
+:210ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p3bowl .
+:210ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p3bowl .
+:210ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p3bowl .
+:210ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p3bowl .
+
+:2over11 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :211ball1, :211ball2 ,:211ball3, :211ball4, :211ball5, :211ball6;
+		cric:nextOver :2over12.
+:211ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p6bowl .
+:211ball2 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p8ns, :t1p6bowl .
+:211ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p9bat, :t2p8ns, :t1p6bowl .
+:211ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p8bat, :t2p9ns, :t1p6bowl .
+:211ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0;
+		cric:providesAgentRole :t2p10bat, :t2p8ns, :t1p6bowl .
+:211ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p10bat, :t2p8ns, :t1p6bowl .
+
+:2over12 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :212ball1, :212ball2 ,:212ball3, :212ball4, :212ball5, :212ball6, :212ball7;
+		cric:nextOver :2over13.
+:212ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p10bat, :t2p5ns, :t1p3bowl .
+:212ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p10ns, :t1p3bowl .
+:212ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p10ns, :t1p3bowl .
+:212ball4 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p10ns, :t1p3bowl .
+:212ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p8bat, :t2p10ns, :t1p3bowl .
+:212ball6 a cric:ball;
+		cric:hasExtras :extra1;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p10bat, :t2p8ns, :t1p3bowl .
+:212ball7 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p10bat, :t2p8ns, :t1p3bowl .
+
+:2over13 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :213ball1, :213ball2 ,:213ball3, :213ball4, :213ball5, :213ball6;
+		cric:nextOver :2over14.
+:213ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p8bat, :t2p10ns, :t1p5bowl .
+:213ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p10bat, :t2p11ns, :t1p5bowl .
+:213ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p5bowl .
+:213ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run3; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p5bowl .
+:213ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p10bat, :t2p11ns, :t1p5bowl .
+:213ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p5bowl .
+
+:2over14 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :214ball1, :214ball2 ,:214ball3.
+:214ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p3bowl .
+:214ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p3bowl .
+:214ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p3bowl .
+:214ball4 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p3bowl .
+:214ball5 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p3bowl .
+:214ball6 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run1; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p3bowl .
+
+:2over15 a cric:over;
+		cric:subEventOf :inn2;
+		cric:hasBall :215ball1, :215ball2 ,:215ball3.
+:215ball1 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p11bowl .
+:215ball2 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p11bowl .
+:215ball3 a cric:ball;
+		cric:hasExtras :extra0;
+		cric:hasRuns :run0; 
+		cric:providesAgentRole :t2p11bat, :t2p10ns, :t1p11bowl .
+
+

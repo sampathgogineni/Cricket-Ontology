@@ -1,0 +1,1790 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.org/cricketonto#"
+     xml:base="http://example.org/cricketonto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://example.org/onto/cricketonto"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasBall -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasBall">
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasCountry -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasCountry"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasDate -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasDate"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasExtras -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasExtras"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasFormat -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasFormat"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasInning -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasInning">
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasLocation"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasLooser -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasLooser"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasOver -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasOver">
+        <rdfs:subPropertyOf>
+            <rdf:Description>
+                <owl:inverseOf rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+            </rdf:Description>
+        </rdfs:subPropertyOf>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasPlayerOfMatch -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasPlayerOfMatch"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasRuns -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasRuns"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasWinner -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#hasWinner"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#nextInnings -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#nextInnings"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#nextOver -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#nextOver"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#performedBy"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#providesAgentRole -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#providesAgentRole"/>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#subEventOf -->
+
+    <owl:ObjectProperty rdf:about="http://example.org/onto/cricketonto#subEventOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasDateValue -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/onto/cricketonto#hasDateValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasExtraValue -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/onto/cricketonto#hasExtraValue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/onto/cricketonto#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasRunDifference -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/onto/cricketonto#hasRunDifference">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#hasRunValues -->
+
+    <owl:DatatypeProperty rdf:about="http://example.org/onto/cricketonto#hasRunValues">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Ball -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Ball">
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasExtras"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Extras"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasRuns"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Runs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#BallRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#BallRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasRuns"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Runs"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Ball</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#BallRole"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A Ball has exactly 3 Ball Roles.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasRuns"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Runs"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A ball has atmost 6 runs</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasExtras"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Extras"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Ball</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasRuns"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Runs"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Ball</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#BallRole"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Ball</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#BallRole -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#BallRole">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#BatsmenRole -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#BatsmenRole">
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#BallRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#BowlerRole -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#BowlerRole">
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#BallRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Country -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Country">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#CricketGame -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#CricketGame">
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasFormat"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Format"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLooser"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasPlayerOfMatch"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasWinner"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#nextInnings"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#TeamRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLooser"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasPlayerOfMatch"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasWinner"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Format"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#TeamRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasPlayerOfMatch"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for CricketGame</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasWinner"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for CricketGame</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#nextInnings"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for CricketGame</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#TeamRole"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for CricketGame</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLooser"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A Cricket Game has exactly 1 Loser.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasPlayerOfMatch"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Player"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A Cricket Game has exactly one Player of the Match</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasWinner"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A Cricket Game has exactly 1 Winner</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Format"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A Cricket Team has exactly 1 format from all three possible formats.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#TeamRole"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A cricket Game is exactly played between Two Teams.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasFormat"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Format"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for CricketGame</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLooser"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for CricketGame</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Date -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Date">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Event -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasDate"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Date"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLocation"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Place"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Event"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasDate"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Date"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>range property for Event</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Event"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLocation"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Place"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>range property for Event</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Extras -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Extras">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Format -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Format">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Inning -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Inning">
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasOver"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#nextInnings"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Inning</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasOver"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Inning</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#nextInnings"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Inning</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Inning</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#NonStrikerRole -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#NonStrikerRole">
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#BallRole"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Over -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Over">
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasBall"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#nextOver"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasBall"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Over"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasBall"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Over.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Over"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#nextOver"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Over.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Over"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Range Property for Over.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://example.org/onto/cricketonto#Over"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasBall"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>An over has atleast 1 ball.</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Place -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Place">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Player -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Player">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasPlayerOfMatch"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#PlayerRole -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#PlayerRole">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Runs -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Runs">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Team -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#Team">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasCountry"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLooser"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasWinner"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#PlayerRole"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#TeamRole"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#TeamRole -->
+
+    <owl:Class rdf:about="http://example.org/onto/cricketonto#TeamRole">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+                <owl:allValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Team"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BallRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Country"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Date"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Event"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Extras"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Format"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Place"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Player"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#PlayerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Runs"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Team"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/onto/cricketonto#ODI_Format -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/onto/cricketonto#ODI_Format">
+        <rdf:type rdf:resource="http://example.org/onto/cricketonto#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#T20_Format -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/onto/cricketonto#T20_Format">
+        <rdf:type rdf:resource="http://example.org/onto/cricketonto#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/onto/cricketonto#Test_Format -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/onto/cricketonto#Test_Format">
+        <rdf:type rdf:resource="http://example.org/onto/cricketonto#Format"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasFormat"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#ODI_Format"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+                <rdfs:subClassOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasOver"/>
+                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">50</owl:maxQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Over"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </rdfs:subClassOf>
+            </owl:Class>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasOver"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">50</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Over"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Every Cricket Game with ODI Format has atmost 50 Overs in an innings.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasFormat"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#ODI_Format"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+                <rdfs:subClassOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                    </owl:Restriction>
+                </rdfs:subClassOf>
+            </owl:Class>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A ODI format Cricket Game has exactly 2 innings</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasFormat"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#T20_Format"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+                <rdfs:subClassOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasOver"/>
+                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</owl:maxQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Over"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </rdfs:subClassOf>
+            </owl:Class>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasOver"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">20</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Over"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>Every Cricket Game with T20 Format has at most 20 overs in an innings</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasFormat"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#T20_Format"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+                <rdfs:subClassOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                    </owl:Restriction>
+                </rdfs:subClassOf>
+            </owl:Class>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>A T20 Format  Cricket Game has exactly 2 innings.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasFormat"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:oneOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://example.org/onto/cricketonto#Test_Format"/>
+                                </owl:oneOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+                <rdfs:subClassOf>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </rdfs:subClassOf>
+            </owl:Class>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:annotatedTarget>
+        <rdfs:comment>Every Cricket Game with Test_Format has at least 3 innnigs and at most 4 innings</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasBall"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Over"/>
+        <rdfs:comment>Domain Property for Over</rdfs:comment>
+    </owl:Axiom>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasCountry"/>
+        <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Country"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Team"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasDate"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Date"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Event"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Event"/>
+        <rdfs:comment>Domain property for event</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasExtras"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Extras"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <rdfs:comment>Domain Property for Ball</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasInning"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <rdfs:comment>Domain Property for Cricket</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLocation"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Place"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Event"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Event"/>
+        <rdfs:comment>Domain Property for event</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasLooser"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <rdfs:comment>Domain Property for Cricket</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasOver"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+        <rdfs:comment>Domain Property for Inning</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasPlayerOfMatch"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <rdfs:comment>Domain Property for Cricket</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#hasWinner"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <rdfs:comment>Domain Property for Cricket</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#nextInnings"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+        <rdfs:comment>Domain Property for Inning</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#nextOver"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Over"/>
+        <rdfs:comment>Domain Property for Over</rdfs:comment>
+    </owl:Axiom>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+        <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#BatsmenRole"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+        <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#BowlerRole"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+        <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#NonStrikerRole"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+        <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Player"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#PlayerRole"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+        <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#TeamRole"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#performedBy"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Team"/>
+                <rdfs:subClassOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">11</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://example.org/onto/cricketonto#PlayerRole"/>
+                    </owl:Restriction>
+                </rdfs:subClassOf>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">11</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://example.org/onto/cricketonto#PlayerRole"/>
+            </owl:Restriction>
+        </owl:annotatedTarget>
+        <rdfs:comment>For each team in a Cricket Game, there are exactly 11 player Roles.</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#BallRole"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <rdfs:comment>Domain Property for Ball</rdfs:comment>
+    </owl:Axiom>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+        <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#PlayerRole"/>
+        <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Team"/>
+    </owl:Restriction>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#providesAgentRole"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#TeamRole"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+        <rdfs:comment>Domain Property for Cricket</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+        <rdfs:comment>Domain Property for Inning</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Inning"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Over"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Over"/>
+        <rdfs:comment>Domain Property for Inning</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.org/onto/cricketonto#subEventOf"/>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#Over"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Ball"/>
+        <rdfs:comment>Domain Property for Over</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://example.org/onto/cricketonto#hasFormat"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://example.org/onto/cricketonto#CricketGame"/>
+                <rdfs:subClassOf rdf:resource="http://example.org/onto/cricketonto#Format"/>
+            </owl:Restriction>
+        </owl:annotatedSource>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://example.org/onto/cricketonto#Format"/>
+        <rdfs:comment>Domain Property for CricketGame</rdfs:comment>
+    </owl:Axiom>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Ball"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#CricketGame"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Inning"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#Over"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BatsmenRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#BowlerRole"/>
+            <rdf:Description rdf:about="http://example.org/onto/cricketonto#NonStrikerRole"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
